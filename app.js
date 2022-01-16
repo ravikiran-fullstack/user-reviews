@@ -48,7 +48,9 @@ function updateReview(review) {
   info.textContent = reviews[review].text;
 }
 
-updateReview(currentReview);
+window.addEventListener("DOMContentLoaded", function () {
+  updateReview(currentReview);
+});
 
 prevBtn.addEventListener("click", function () {
   console.log("prev ");
